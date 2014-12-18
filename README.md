@@ -5,11 +5,14 @@ Date   	: Mar-09-2014
 -----------------------------------------
 
 Command Line Arguments
-======================
 ------------------------------------------------------
-Example:  ./xhw1 [flags] outfile infile1 infile2 ....
--------------------------------------------------------
+
+Example:  ./xhw1 [flags] outfile infile1 infile2
+
+
 [flags]	- optional
+-------------------------------------------------------
+
 -a: append mode (O_APPEND)
 -c: O_CREATE
 -t: O_TRUNC
