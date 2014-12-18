@@ -1,7 +1,8 @@
-#Subject	: Homework Assignment #1
-#Name		: Gautham Reddy Kunta
-#Date   	: Mar-09-2014
-
+-----------------------------------------
+Subject	: Homework Assignment #1
+Name	: Gautham Reddy Kunta
+Date   	: Mar-09-2014
+-----------------------------------------
 
 Command Line Arguments
 ======================
@@ -37,6 +38,7 @@ Description
 ------------
 
 Input Validations in system call:
+---------------------------------	
 	# whether all the input files and output file (if present) can be opened
 	   else returns error.
 	# whether input and output file name are same if same returns an error.
@@ -45,6 +47,7 @@ Input Validations in system call:
 	# validating the data passed from user space.
 
 Normal Behaviour:
+-----------------
 	# Validates all the inputs and creates the inputPrameter structure.
 	# Checks for the append flag if present opens or creates the output
 	   file with the given flags andsets the offset to end of the file.
@@ -56,6 +59,7 @@ Normal Behaviour:
 	   successfully read and written based on special flag (-N -P or default).
 
 Atomic Behaviour:
+-----------------
 	Code for handling atomic behaviour is ifdef under EXTRA_CREDIT macro
 	and is executed only when -A option is specified.
 	
@@ -71,12 +75,13 @@ Atomic Behaviour:
 	   with the given output file name.
 
 Unhandled :
-
+-----------
 	# Validation of mode since if invalid mode is given a sticky bit is set by filp_open.
 	# Normal octal validation is done in user program.
 
 
 Functions used:
+---------------
 	# vfs_write()
 	# vfs_read()
 	# filp_open()
